@@ -1,0 +1,144 @@
+.field {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-direction: row;
+  
+}
+
+.--end{
+  display: flex;
+  align-content: end;
+}
+
+.consoleBox{
+  display: flex;
+  margin: 2em;
+  flex: 1;
+  height: 70%;
+}
+
+.boardBox{
+  display: flex;
+  align-items: end;
+  margin-top: auto;
+  margin-bottom: 7em;
+  
+}
+
+.corrals {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 10px;
+}
+
+.corral {
+  width: 5em;
+  height: 5em;
+  background-color: #958061;
+  margin: 5px;
+  border-radius: 15px;
+  padding: 5px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .corrals {
+    grid-template-columns: repeat(
+      5,
+      1fr
+    ); /* 3 columnas en pantallas pequeñas */
+  }
+}
+
+@media (max-width: 480px) {
+  .corrals {
+    grid-template-columns: repeat(
+      3,
+      1fr
+    ); /* 2 columnas en pantallas muy pequeñas */
+  }
+}
+
+.img-alien {
+  transform: scaleX(-1);
+}
+.titleSun{
+  background-color: #ffd642;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  margin: 3em;
+  box-shadow:-15px 15px 50px 25px #ffd64233;
+  
+}
+.field__title {
+  color: #FFF;
+  text-align: center;
+}
+
+.console {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: #a9704c;
+  border-radius: 20px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.354);
+  padding: 1em;
+  flex-direction: column;
+  overflow: auto;
+}
+
+.msg{
+  background-color: #e7d49c;
+  border-radius: 15px;
+  width: 90%;
+  min-height: 3em;
+  margin: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+/* Estilos para WebKit (Chrome, Safari) */
+.scroll-container::-webkit-scrollbar {
+ width: 15px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  background-color: rgb(150, 150, 150); /* Color del thumb (la parte móvil del scrollbar) */
+  border-radius: 15px; /* Bordes redondeados del thumb */
+}
+
+.scroll-container::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Color de fondo del track (la parte fija del scrollbar) */
+  border-radius: 20px;
+  margin: 8px;
+}
+
+/* Estilos para Gecko (Firefox) */
+.scroll-container::-moz-scrollbar {
+  width: 12px; /* Ancho del scrollbar */
+}
+
+.scroll-container::-moz-scrollbar-thumb {
+  background-color: #888; /* Color del thumb (la parte móvil del scrollbar) */
+  border-radius: 6px; /* Bordes redondeados del thumb */
+}
+
+.scroll-container::-moz-scrollbar-track {
+  background-color: #f1f1f1; /* Color de fondo del track (la parte fija del scrollbar) */
+}
+
