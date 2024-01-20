@@ -1,10 +1,10 @@
-# Consumer - Producer App React + Vite
+# Consumer - Producer App React + Vite 🍃
 
-Esta pagina web Simula  el comportamiento  de un contenedor el cual es un buffer circular y acotado  es decir cuando llegue a la ultima casilla se regresa a  primera.
+✅ Esta pagina web Simula  el comportamiento  de un contenedor el cual es un buffer circular y acotado  es decir cuando llegue a la ultima casilla se regresa a  primera.
 
-El desarrollo es un tipo juego, en el que el **productor** es en este caso el **vaquero**, el **consumidor** es un **alien**, el cual roba el **producto** que son **vacas**, las cuales estan en el **contenedor**, el **corral***.
+💻 El desarrollo es un tipo juego, en el que el **productor** es en este caso el **vaquero** 🤠, el **consumidor** es un **alien** 👽, el cual roba el **producto** que son **vacas** 🐄, las cuales estan en el **contenedor**, el **corral**🏕️.
 
-- El productor:
+- 🤠 El productor:
 
 	- coloca elementos 
 	- para que el productor entre debe haber espacio libre 
@@ -13,7 +13,7 @@ El desarrollo es un tipo juego, en el que el **productor** es en este caso el **
 	- al despertar intenta producir 
 	- produce de de 3 a 10 elementos 
 
- - El consumidor :
+ - 👽 El consumidor :
 
 	- retira elementos 
 	- para que el consumidor entre debe haber elementos  
